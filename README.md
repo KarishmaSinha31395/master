@@ -53,7 +53,7 @@ Backend Setup:
 
 Clone the backend repository:
 git clone <repository-url>
-cd backend-main
+cd master/backend-main
 npm install
 
 Set up backend environment variables:
@@ -63,7 +63,7 @@ MONGO_URI=<mongo_db_uri>
 BASIC_AUTH_USERNAME=<username>
 BASIC_AUTH_PASSWORD=<password>
 Frontend Setup:
-cd frontend-main
+cd master/frontend-main
 npm install
 Set up frontend environment variables:
 Create a .env file in the frontend root directory and add the following variable:
@@ -72,12 +72,12 @@ VITE_AUTH_PASSWORD=<password>
 
 **Usage**
 Start the backend server:
-cd backend-main
+cd master/backend-main
 npm run dev
 
 Run the Frontend:
 Open Another Terminal in the same IDE
-cd frontend-main
+cd master/frontend-main
 npm run dev
 Access the Application:
 Open your browser and go to http://localhost:5173 to access the Todo application.
@@ -98,7 +98,7 @@ To use Auth0 authentication, follow the login process by clicking the login butt
 The application includes unit tests using Chai, Mocha, and Axios for the backend.
 Run the tests using the following command:
 Open Another terminal 
-cd backend-main
+cd master/backend-main
 npm test
 Note: The api server must run in another server parallely to run the unit test cases as unit test case use axios to call the api's 
 
